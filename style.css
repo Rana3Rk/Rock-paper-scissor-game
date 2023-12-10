@@ -37,6 +37,7 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
+  
     margin-top: 5rem;
   }
   
@@ -67,3 +68,42 @@
     border-radius: 1rem;
   }
 
+
+  @media only screen and (max-width: 600px) {
+    body {
+      font-size: 10px;
+      display: flex;
+      flex-direction: column; /* Adjusted for better responsiveness on smaller screens */
+    }
+    .choice{
+      height: 40px;
+      width: 40px;
+      object-fit: cover;
+      font-size: 10px;
+    }
+    img{
+      height: 40px;
+      width: 40px;
+    }
+    #user-score,
+    #comp-score {
+    font-size: 1rem;
+  }
+  #msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 1rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 2rem;
+    gap: 4rem;
+  }
+  
+  }
